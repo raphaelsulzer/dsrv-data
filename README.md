@@ -17,7 +17,7 @@ Data, code and pretrained models for the paper **Deep Surface Reconstruction fro
   <tr>
     <td>Point cloud</td>
     <td>Reconstruction</td>
-    <td>Visibility augmented point cloud</td>
+    <td>Point cloud with Visibility</td>
     <td>Reconstruction</td>
   </tr>
 </tbody>
