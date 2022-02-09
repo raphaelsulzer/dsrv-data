@@ -47,23 +47,28 @@ data for ConvONet, Points2Surf, Shape As Points, POCO and DGNN.
 
 [//]: # (- The training data for Shape As Points can be downloaded here.)
 
-### Scanning procedure
+### Scanning Procedure
 
 If you want to create scans of your own dataset you can use the precompiled `scan` executable. It should work on most Ubuntu systems.
 
-```
-scan -w path/to/working_directory -i "" -o output_filename -g mesh_to_scan_filename --export npz
+```bash
+scan -w path/to/working/directory -i meshToScan_filename --export npz
 ```
 
 For creating the scans used in the paper the follwing settings were used:
 
-```
+```bash
 --points 3000 --noise 0.005 --outliers 0.0
 ```
 
-## Code
+###Data Loading
 
-You can find our modified code and pretrained models for the methods tested in the paper below.
+You can use the `dataloader.py` script to load visibility augmented point clouds from the produced scans.
+
+
+## Code and Pretrained Models
+
+You can find our modified code and pretrained models for the surface reconstruction methods tested in our paper below.
 All methods support point clouds with and without visibility information.
 
 - [ConvOnet](https://github.com/raphaelsulzer/convolutional_occupancy_networks)
