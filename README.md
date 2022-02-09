@@ -61,7 +61,7 @@ For creating the scans used in the paper the follwing settings were used:
 --points 3000 --noise 0.005 --outliers 0.0
 ```
 
-###Data Loading
+### Data Loading
 
 You can use the `dataloader.py` script to load visibility augmented point clouds from the produced scans.
 
