@@ -49,21 +49,23 @@ data for ConvONet, Points2Surf, Shape As Points, POCO and DGNN.
 
 ### Scanning Procedure
 
-If you want to create scans of your own dataset you can use the precompiled `scan` executable. It should work on most Ubuntu systems.
+You can create point clouds with visibility information of your own dataset using the `scan` tool. 
+You can use the precompiled executable from this repository, (which should work on most Ubuntu systems)
+or compile it youself using [mesh-tools](git@github.com:raphaelsulzer/mesh-tools.git).
 
 ```bash
-scan -w path/to/working/directory -i meshToScan_filename --export npz
+./scan -w path/to/workingDir -i filenameMeshToScan --export npz
 ```
 
 For creating the scans used in the paper the follwing settings were used:
 
 ```bash
---points 3000 --noise 0.005 --outliers 0.0
+--points 3000 --noise 0.005 --outliers 0.0 --cameras 10
 ```
 
 ### Data Loading
 
-You can use the `dataloader.py` script to load visibility augmented point clouds from the produced scans.
+You can use the `dataloader.py` script to load visibility augmented point clouds from the `scan.npz` files.
 
 
 ## Code and Pretrained Models
@@ -82,9 +84,9 @@ All methods support point clouds with and without visibility information.
 
 ## References
 
-If you find the code or data in this repository useful, please consider citing the following paper:
+If you find the code or data in this repository useful, please consider citing
 
-```
+```bibtex
 @misc{sulzer2022deep,
       title={Deep Surface Reconstruction from Point Clouds with Visibility Information}, 
       author={Raphael Sulzer and Loic Landrieu and Alexandre Boulch and Renaud Marlet and Bruno Vallet},
@@ -94,7 +96,6 @@ If you find the code or data in this repository useful, please consider citing t
       primaryClass={cs.CV}
 }
 ```
-
 
 
 
