@@ -50,8 +50,8 @@ data for ConvONet, Points2Surf, Shape As Points, POCO and DGNN.
 ### Scanning Procedure
 
 You can create point clouds with visibility information of your own dataset using the `scan` tool. 
-You can use the precompiled executable from this repository, (which should work on most Ubuntu systems)
-or compile it youself using [mesh-tools](git@github.com:raphaelsulzer/mesh-tools.git).
+You can use the precompiled `scan` executable from this repository (which should work on most Ubuntu systems),
+or compile it youself using [mesh-tools](https://github.com/raphaelsulzer/mesh-tools).
 
 ```bash
 ./scan -w path/to/workingDir -i filenameMeshToScan --export npz
