@@ -1,8 +1,7 @@
 # Deep Surface Reconstruction from Point Clouds with Visibility Information
 
-[Paper](https://arxiv.org/abs/2202.01810)
 
-Data, code and pretrained models for the paper **Deep Surface Reconstruction from Point Clouds with Visibility Information**.
+Data, code and pretrained models for the ICPR 2022 paper ([arXiv](https://arxiv.org/abs/2202.01810)).
 
 <table>
 <thead>
@@ -87,14 +86,15 @@ All methods support point clouds with and without visibility information.
 If you find the code or data in this repository useful, please consider citing
 
 ```bibtex
-@misc{sulzer2022deep,
-      title={Deep Surface Reconstruction from Point Clouds with Visibility Information}, 
-      author={Raphael Sulzer and Loic Landrieu and Alexandre Boulch and Renaud Marlet and Bruno Vallet},
-      year={2022},
-      eprint={2202.01810},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@INPROCEEDINGS{sulzer2022deep,
+  author={Sulzer, Raphael and Landrieu, Loïc and Boulch, Alexandre and Marlet, Renaud and Vallet, Bruno},
+  booktitle={2022 26th International Conference on Pattern Recognition (ICPR)}, 
+  title={Deep Surface Reconstruction from Point Clouds with Visibility Information}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={2415-2422},
+  doi={10.1109/ICPR56361.2022.9956560}}
 ```
 
 
